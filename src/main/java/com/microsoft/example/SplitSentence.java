@@ -16,7 +16,7 @@ public class SplitSentence extends BaseBasicBolt {
   @Override
   public void execute(Tuple tuple, BasicOutputCollector collector) {
     //Get the sentence content from the tuple
-    String sentence = tuple.getString(0);
+    String sentence = tuple.getString(0).toString();
     //An iterator to get each word
     BreakIterator boundary=BreakIterator.getWordInstance();
     //Give the iterator the sentence
