@@ -41,7 +41,7 @@ public class RedisTopology {
 		      //submit the topology
 		      cluster.submitTopology("word-count", conf, builder.createTopology());
 		      //sleep
-		      Thread.sleep(100);
+		      Thread.sleep(10000);
 		      //shut down the cluster
 		      cluster.shutdown();
 		    }

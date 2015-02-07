@@ -65,7 +65,7 @@ public class RedisQueueSpout extends BaseRichSpout {
 	    System.out.println("this"+this.jq);
 	    if (ret == null) {
 	      Utils.sleep(5L);
-//	      System.out.println("-----------nulllllllllllllllllllllllllll--------------");
+	      System.out.println("-----------nulllllllllllllllllllllllllll--------------");
 	    }
 	    else {
 	      System.out.println("999999999999999999999999999999999999999999999"+ret);
