@@ -62,8 +62,9 @@ public class RedisQueueSpout extends BaseRichSpout {
 
 	  public void nextTuple() {
 	    List<String> ret = this.jq.dequeue();
+	    System.out.println("this"+this.jq);
 	    if (ret == null) {
-//	      Utils.sleep(5L);
+	      Utils.sleep(5L);
 //	      System.out.println("-----------nulllllllllllllllllllllllllll--------------");
 	    }
 	    else {
