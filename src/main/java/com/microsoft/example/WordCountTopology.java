@@ -19,11 +19,16 @@ public class WordCountTopology {
     //and parallelism hint of 5 executors
     
     
-    String consumerkey = "343S5AjUmtRcPLSUIpeafSLYX";
-    String consumerSecret = "BNfMdgOzaB3RcDSAz3mVUL6Hkp7IYMi6D4GdXflw5rmNjCoMYl";
-    String accessToken ="130407825-IGFKg04hYHQEOINYXMYTcjs8cTRQ4HxLkJOMmQUC";
-    String accessTokenSecret = "6NjEPE59s7wWb31SORxKqv9IR4QdwQ4uY4aG3befUaZQO";
-    String[] specifyKeyWords={"test","ruby"};
+//    cb.setOAuthConsumerKey("pZaijdzlpEszPfhLE7YWid6nB");
+//    cb.setOAuthConsumerSecret("dWBdUVV3LnfueizekmXfR73rHYTK4XVhmuqjIcuYYdsU9rkKtb");
+//    cb.setOAuthAccessToken("130407825-zCZRtTA4XbiyUgmxsaAi4HNuZfDOaaPNCpYmeFIu");
+//    cb.setOAuthAccessTokenSecret("fhjdxNGdkUmz9CLhxfBW6t1wQ18CT7I9gjhjisdR3k2Wk");
+    
+    String consumerkey = "pZaijdzlpEszPfhLE7YWid6nB";
+    String consumerSecret = "dWBdUVV3LnfueizekmXfR73rHYTK4XVhmuqjIcuYYdsU9rkKtb";
+    String accessToken ="130407825-zCZRtTA4XbiyUgmxsaAi4HNuZfDOaaPNCpYmeFIu";
+    String accessTokenSecret = "fhjdxNGdkUmz9CLhxfBW6t1wQ18CT7I9gjhjisdR3k2Wk";
+    String[] specifyKeyWords={"hello","ruby"};
     TwitterSampleSpout spout = new TwitterSampleSpout(consumerkey,consumerSecret,accessToken,accessTokenSecret,specifyKeyWords);
     
 //    this.consumerKey = "343S5AjUmtRcPLSUIpeafSLYX";
