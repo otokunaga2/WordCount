@@ -32,13 +32,13 @@ public class RedisQueueSpout extends BaseRichSpout {
 	private SpoutOutputCollector _collector;
 
 	  /** The host on which Redis is located. */
-	  private final String         host;
+	  private String host;
 
 	  /** The port at which Redis may be found. */
-	  private final int            port;
+	  private int port;
 
 	  /** The "pattern" i.e. root key below which all messages are stored. */
-	  private final String         pattern;
+	  private String pattern;
 
 	  /** JedisQueue instance. Transient as its inner Jedis member cannot be serialized. */
 	  private transient JedisQueue jq;
@@ -54,7 +54,7 @@ public class RedisQueueSpout extends BaseRichSpout {
 	    _collector = collector;
 	    Jedis newJedis = new Jedis(host, port);
 	    newJedis.connect();
-	    this.jq = new JedisQueue(newJedis, pattern);
+	    this.jq = new JedisQueue(newJedis, this.pattern);
 	  }
 
 	  public void close() {
