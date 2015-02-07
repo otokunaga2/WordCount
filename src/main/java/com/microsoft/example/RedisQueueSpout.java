@@ -67,7 +67,7 @@ public class RedisQueueSpout extends BaseRichSpout {
 //	      System.out.println("-----------nulllllllllllllllllllllllllll--------------");
 	    }
 	    else {
-	      System.out.println(ret);
+	      System.out.println("999999999999999999999999999999999999999999999"+ret);
 
 	      _collector.emit(new Values(ret));
 	    }
